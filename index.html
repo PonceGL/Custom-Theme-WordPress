@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/justifiedGallery-min.css">
+    <link rel="stylesheet" href="css/animateButtonMenu.css">
+    <title>Ro Aguirre | PHOTOGRAPHY</title>
+</head>
+
+<body>
+    <header>
+        <section class="containerLogo">
+            <a class="enlaceLogo" href="index.html">
+                <img class="logo" src="brand/LogoRO.png"
+                alt="Logo Ro Aguirre">
+            </a>
+            <!-- icono de menu -->
+            <div class="container-menu-icon" id="container-menu-icon"> 
+                <div class="pointA points" id="pointA"></div>
+                <div class="pointB points" id="pointB"></div>
+                <div class="pointC points" id="pointC"></div>
+            </div>
+        </section>
+        <nav class="menuPrincipal" id="menuPrincipal">
+            <div class="containerMenu">
+                <ul class="menuPlist">
+                    <a class="enlaceMenu" href="nature.html">Nature</a>
+                    <a class="enlaceMenu" href="#">Food & Beverage</a>
+                    <a class="enlaceMenu" href="#">Product</a>  
+                    <a class="enlaceMenu" href="#">Life Style</a>
+                    <a class="enlaceMenu" href="#">Abstract</a>
+                    <a class="enlaceMenu" href="#">Travels</a>
+                    <a class="enlaceMenu" href="#">Blanck & White</a>
+                    <a class="enlaceMenu" href="#">Textures</a>
+
+                    <div class="enlaceMenu dropdownMenu"><div class="name__and-span">Private<span><div class="cotainer__arrowDown"><div class="lineOne lineArrow"></div><div class="lineTwo lineArrow"></div></div></span></div>
+                        <div class="dropdown">
+                            <!-- password -->
+                            <a class="enlaceMenu" href="#">Me</a>
+                            <!-- password -->
+                            <a class="enlaceMenu" href="#">Body Senses</a>
+                            <!-- password -->
+                            <a class="enlaceMenu" href="#">Private</a>
+                        </div>
+                    </div>
+
+                    <a class="enlaceMenu" href="contact.html">Contact Me</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mainPrincipal">
+        <section class="gallery" id="gallery"></section>
+    </main>
+
+    <footer>
+        <section class="me" id="me">
+            <div class="meImg">
+                <img src="brand/amir-khan.jpg" alt="Ro Aguirre">
+            </div>
+            <div class="meText">
+                <h1 class="meName">Roberto Aguirre Vidal</h1>
+                <p>
+                    Un amateur compartiendo una de sus pasiones.
+                </p>
+            </div>
+        </section>
+        <section class="menu-social" id="menu-social">
+            <a href="https://www.instagram.com/roaguirrephoto/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/RoAguirrePhoto" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/RoAguirre-113120970473612/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </section>
+        <div class="copyright">
+            <p>
+                Designed by PonceGL© for
+                ©2020 - RoAguirre. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <div class="modalCophyright">
+        <p>
+            These photos are illustrative, but the idea is to show a copyright message on the original website, with photographs with copyright.
+            <!-- These photos are copyrighted by their respective owners. All rights reserved. Unauthorized use prohibited. -->
+        </p>
+    </div>
+
+    <script>
+        for (let i = 1; i <= 30; i++) {
+        gallery.innerHTML += `
+            <div class="gallery_item">
+                <img class="gallery_item_image scale" src="./img/foto${i}.jpg" alt="Gallery Vanila JS">
+                <a class="gallery_item_info" href="#">
+                    <h4 class="gallery_item_info_name">Photography 0${i} </h4>
+                    <p class="gallery_item_info_description">Gallery Vanila JS Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit culpa aperiam earum tempora quod iusto sapiente <delectus className=""></delectus></p>
+                </a>
+            </div>
+        `;
+    }
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/e15999dd07.js" crossorigin="anonymous"></script>
+<script src="js/animateButtonMenu.js"></script>
+<script src="js/justifiedGallery-min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

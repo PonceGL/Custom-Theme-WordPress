@@ -1,0 +1,785 @@
+/*
+Theme Name: RoAguirre
+Author: the Ponce
+Author URI: poncegl.com
+Description: Tema diseñado especificamente Roberto Aguirre, para el sitio roaguirre.com.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+:root{
+    --white: #fff;
+    --dark: #000;
+    --gray: #929aab;
+    --green: #4ecca3;
+    --boton: #292929;
+}
+
+::selection{
+    color: var(--dark);
+    background: var(--green);
+}
+
+::-moz-selection{
+    color: var(--dark);
+    background: var(--green);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary);
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° header °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+header{
+    width: 100%;
+    padding: 30px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: var(--white);
+    background-image: url('../brand/white-texture.png');
+    background-repeat: repeat;
+    background-size: cover;
+
+    transition: ease-in-out;
+    transition-duration: 0.7s;
+
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(140,140,140,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(140,140,140,1);
+    box-shadow: 0px 2px 5px 0px rgba(140,140,140,1);
+}
+
+.containerLogo{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaceLogo{
+    width: calc(100% / 3.5);
+    transition: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+.logo{
+    width: 100%;
+}
+
+.containerLogo i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Menu Principal °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+.menuPrincipal{
+    width: 100%;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+
+    background: var(--white);
+    background-image: url('../brand/white-texture.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.containerMenu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menuPlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.enlaceMenu{
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Brown Austin Sans', 'Roboto';
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--dark);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.enlaceMenu:hover{
+    background: rgba(146, 154, 171, 0.2);
+    text-decoration: underline;
+}
+
+.fa-chevron-down{
+    font-size: 15px;
+    padding: 0 5px;
+    color: var(--dark);
+}
+
+.dropdownMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.name__and-span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdownMenu .cotainer__arrowDown{
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    background: transparent;
+    position: relative;
+}
+
+.lineArrow{
+    width: 80%;
+    height: 1px;
+    background: #000;
+    border-radius: 0.5px;
+}
+
+.lineOne{
+    transform: translate(-2px, 8px) rotate(50deg);
+}
+
+.lineTwo{
+    transform: translate(5px, 7px) rotate(-50deg);
+}
+
+.dropdown{
+    width: 140%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    background-image: url('../brand/white-texture.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.dropdown .enlaceMenu{
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Main °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+main{
+    margin-top: 150px;
+    min-height: 650px;
+}
+
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Footer °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+
+footer{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    background: var(--dark);
+    
+    background-image: url('../brand/dark-texture.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meImg img{
+    width: 200px;
+}
+
+.meText{
+    width: 200px;
+    padding: 10px;
+    text-align: left;
+}
+
+.meName{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--white);
+}
+
+.meText p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.menu-social i{
+    font-size: 20px;
+    padding: 5px 15px;
+    color: var(--white);
+}
+
+.copyright{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.copyright p{
+    font-size: 12px;
+    color: var(--white);
+}
+
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Pages °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+.mainPages{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titlePagesMovile{
+    display: none;
+}
+
+.galleryPages{
+    width: 65%;
+}
+
+.informationPages{
+    width: 35%;
+    position: relative;
+}
+
+.descriptionPages{
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.descriptionPages{
+    position: fixed;
+    top: -2%;
+}
+
+.titlePages{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 20px auto;
+}
+
+.textoPages{
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Page Contact °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+.contactMain h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.contactArea{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactNewsletter,
+.contactForm{
+    width: 35%;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(146, 154, 171, 0.1);
+    border-radius: 5px;
+}
+
+.contactNewsletter img{
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contactNewsletter p{
+    margin: 10px auto;
+    color: var(--dark);
+}
+
+form{
+    width: 100%;
+}
+
+.formName input{
+    border-radius: 5px 5px 0 0;
+}
+
+.formEmail input{
+    border-radius: 0 0 5px 5px;
+}
+
+.formName input,
+.formNumber input,
+.formEmail input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background: var(--white);
+}
+
+form input::placeholder,
+textarea::placeholder{
+    font-size: 15px;
+    color: var(--green);
+}
+
+.formMessage{
+    margin-top: 10px;
+}
+
+.formMessage textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    position: relative;
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.formTerms,
+.formSend{
+    width: 100%;
+    padding: 0;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.formTerms{
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+.formTerms input{
+    opacity: 0;
+}
+
+
+.formTerms p{
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.formTerms .fa-check{
+    display: none;
+    font-size: 12px;
+    padding: 3px;
+    margin-right: 7px;
+    border-radius: 50%;
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.check{
+    color: var(--green);
+}
+
+.formTerms label{
+    width: 100%;
+    font-size: 14px;
+}
+
+.formTerms label:hover{
+    text-decoration: underline;
+}
+
+.formSubmit{
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: var(--green);
+    background: var(--white);
+    cursor: pointer;
+}
+
+.formSubmit:hover{
+    color: var(--green);
+}
+
+.error{
+    color: red;
+}
+
+.readTerms a{
+    font-size: 12px;
+    text-decoration: underline;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.readTerms a:hover{
+    text-decoration: underline;
+}
+
+.noficationForm{
+    color: var(--green);
+}
+
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Modal Cophyright °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+
+.modalCophyright{
+    width: 140px;
+    padding: 2px;
+    position: absolute;
+    background: rgb(0 0 0 / 0.8);
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.modalCophyright p{
+    color: #fff;
+    font-size: 8px;
+}
+
+
+
+
+
+
+
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°° Media Querys °°°°°°°°°°°°°°°°°°°°°°°°°°° */
+@media (max-width: 1030px){
+    .enlaceMenu{
+        width: 20%;
+    }
+
+    .dropdown{
+        width: 100%;
+    }
+
+    .modal{
+        flex-direction: column;
+    }
+
+    .contactNewsletter, 
+    .contactForm{
+        width: 40%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 780px){
+
+    .enlaceModal{
+        font-size: 20px;
+    }
+
+    .contactNewsletter, 
+    .contactForm{
+        width: 50%;
+        margin: 15px auto;
+    }
+}
+    
+@media (max-width: 580px){
+    .enlaceLogo{
+        width: calc(100% / 2);
+    }
+
+    .enlaceMenu{
+        margin: 15px;
+        font-size: 15px;
+        width: 70%;
+        text-align: left;
+    }
+
+    .dropdownMenu{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown{
+        position: initial;
+        background: transparent;
+        background-image: none;
+    }
+
+    .mainPages{
+        flex-direction: column;
+    }
+
+    .titlePagesMovile{
+        display: block;
+        margin: 10px auto;
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .titlePages{
+        display: none;
+    }
+
+    .galleryPages{
+        width: 100%;
+    }
+
+    .descriptionPages{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .textoPages{
+        font-size: 15px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer section{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .meImg,
+    .meText{
+        width: 50%;
+    }
+
+    .meText{
+        padding: 5px;
+    }
+    
+    .meText h1, 
+    .meText p{
+        font-size: 13px;
+    }
+
+    .menu-social{
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .menu-social i{
+        font-size: 35px;
+    }
+
+    .copyright{
+        position: initial;
+        margin: 10px auto;
+    }
+
+    .copyright p{
+        font-size: 8px;
+    }
+
+    .informationPages{
+        width: 100%;
+    }
+
+    .containerTagsEntradas{
+        margin: 10px;
+    }
+
+    .modalContainerImage{
+        max-width: 90%;
+        height: 70%;
+    }
+
+    .modalInfo{
+        max-width: 90%;
+        height: 30%;
+    }
+
+    .modalClose{
+        right: 20%;
+    }
+
+    .contactArea{
+        flex-direction: column;
+    }
+
+    .contactNewsletter, 
+    .contactForm{
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .contactNewsletter img{
+        width: 60%;
+    }
+
+    .formTerms, 
+    .formSend{
+        justify-content: center;
+    }
+
+    .formSubmit{
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 430px){
+    .descriptionPages{
+        width: 100%;
+    }
+
+    footer section{
+        width: 100%;
+    }
+    .meImg{
+        width: 40%;
+    }
+
+    .meImg img{
+        width: 100%;
+    }
+
+    .meText{
+        width: 60%;
+        padding-left: 10px;
+    }
+    
+    .meText h1,
+    .meText p{
+        font-size: 18px;
+    }
+
+    .contactNewsletter h3{
+        font-size: 13px;
+    }
+    
+    .contactNewsletter p{
+        font-size: 11px;
+    }
+}
+@media (max-width: 400px){
+    .enlaceMenu{
+        margin: 10px;
+    }
+
+    .menuPrincipal{
+        overflow: scroll;
+        height: calc(100vh - 50px);
+    }
+
+    .menuPlist{
+        height: 80%;
+    }
+
+    .textoPages{
+        font-size: 10px;
+    }
+
+
+    .meText h1, 
+    .meText p{
+        font-size: 9px;
+    }
+
+    .menu-social i{
+        font-size: 25px;
+    }
+
+    .modalClose {
+        right: 30%;
+    }
+
+    .contactNewsletter img{
+        width: 75%;
+    }
+
+    .formTerms p{
+        font-size: 12px;
+    }
+
+    .readTerms a{
+        font-size: 10px;
+    }
+}
